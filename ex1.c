@@ -72,7 +72,7 @@ int main() {
     int position5 = hexaSum >> 5;
     int position7 = hexaSum >> 7;
     int position11 = hexaSum >> 11;
-    printf("The numbers in positions 3,5,7,11 are %d,%d,%d,%d\n" position3,position5,position7,position11);
+    printf("The numbers in positions 3,5,7,11 are %d,%d,%d,%d\n", position3,position5,position7,position11);
   printf("Bye!\n");
   
   return 0;
