@@ -72,7 +72,7 @@ int main() {
     int position5 = (hexaSum >> 5)&1;
     int position7 = (hexaSum >> 7)&1;
     int position11 = (hexaSum >> 11)&1;
-    printf("The 3,5,7,11 bits are %d%d%d%d\n", position3,position5,position7,position11);
+    printf("The 3,5,7,11 bits are: %d%d%d%d\n", position3,position5,position7,position11);
   printf("Bye!\n");
   
   return 0;
