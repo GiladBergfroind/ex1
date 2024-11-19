@@ -19,7 +19,7 @@ int main() {
   printf("Please enter a position:\n");
   scanf("%d",&position);
   int bitInPosition = (number>>position) & 1; // by moving the bits of the number position times to the right we are getting the wnated bit and by doing &1 we are taking the most right bit
-  printf("The bit in position %d of the number %d is: %d", position, number, bitInPosition);
+  printf("The bit in position %d of number %d is: %d", position, number, bitInPosition);
   
   // Set bit
   printf("\nSet bit:\n");
@@ -68,11 +68,11 @@ int main() {
     scanf("%o",&number1);
     int hexaSum = number1 + number2;
     printf("The sum in hexadecimal: %X\n",hexaSum);
-    int position3 = hexaSum >> 3;
-    int position5 = hexaSum >> 5;
-    int position7 = hexaSum >> 7;
-    int position11 = hexaSum >> 11;
-    printf("The 3,5,7,11 bits are %d,%d,%d,%d\n", position3,position5,position7,position11);
+    int position3 = (hexaSum >> 3)&1;
+    int position5 = (hexaSum >> 5)&1;
+    int position7 = (hexaSum >> 7)&1;
+    int position11 = (hexaSum >> 11)&1;
+    printf("The 3,5,7,11 bits are %d%d%d%d\n", position3,position5,position7,position11);
   printf("Bye!\n");
   
   return 0;
